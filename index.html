@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a three page portfoilo webpage design and belong to Yiting Zhang.">
+    <title>Yiting Zhang's Portfoilo </title>
+    <link rel="stylesheet" href="global.css">
+   
+</head>
+<body>
+    <header>
+    </header>
+    <nav>
+        <ul>
+            <li id="resume"><a>Main</a></li>
+            <li id="other"><a>Other</a>
+                <ul class="dropdown">
+                <li><a href="other/maya/maya.html">Maya</a></li>
+                <li><a href="other/resume/resume.html">Resume</a></li>
+                 </ul>
+                </li>
+            <li id="graphic"><a>Graphic<br>Design</a>
+                <ul class="dropdown">
+                    <li><a href="graphic_design/poster_in_motion/poster_in_motion.html">Poster In Motion</a></li>
+                    <li><a href="graphic_design/new_york_times_title/nytimes_title.html">New York Times Title</a></li>
+                    <li><a href="graphic_design/other/other.html">Other</a></li>
+                </ul>
+            </li>
+            <li id="game"><a>Game<br>Design</a>
+            <ul class="dropdown">
+                <li><a href="game_design/one_week_project/oneweekproject.html">Weekly Project</a></li>
+                <li><a href="game_design/toy_controller/toy_controller.html">Toy Controller</a></li>
+                <li><a href="game_design/fragment_island/fragment_island.html">Fragmented Islands</a></li>
+                <li><a href="game_design/fragment_island/fragment_island.html">Sky Skater</a></li>
+            </ul>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <img src="image/me.jpg" alt="A picture of my self" id="me">
+        <h1>I am...</h1>
+        <p id="selfIntroduction">   a junior at the Parsons School of Design currently studing Design and Technology, minoring in communciation design. I contribute myself toward graphic design and game design for years, and build up a strong design aesthetic. I am a responsible person who devotes to work, more than willing to help others and have team work spirits to meet the deadline and achieve best results.</p>
+        <h2>A Game Designer</h2>
+            <iframe width="1080" height="640"
+            src="https://www.youtube.com/embed/afSKxltHCjs"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
+        <h3 class="right">Weekly Game Project Overview</h3>
+        <div class="three_image">
+            <a href="game_design/sky_skater/sky_skater.html">
+                <img src="image/skyskater.png" class="center"></img>
+            </a>
+            <a href="game_design/fragment_island/fragment_island.html"> 
+                <img src="image/island2.png" class="center">
+                </a>
+            <a href="game_design/one_week_project/oneweekproject.html">
+            <img src="game_design/one_week_project/images/in view2.png"  class="center">
+            </a>
+        </div>
+
+        <h2>Graphic Designer</h2>
+        
+        <section class="container">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img id="slider-1" src="image/poster in motion.png">
+                <p>This is a project designed for 2023 Halloween Parade located in NYC. The theme that year is "Outside down, Inside Out." I made this static image and corresponding motion graphic piece aims to display in the public environment for promotion.</p>
+                <img id="slider-2" src="image/Spread the word.png" >
+                <p>This poster is made for the manifesto, Spread the Word. It is a global campaign working towards inclusion for all people with intellectual and developmental disabilities. It encourages people to stop using “retard”, but respect these groups of people.</p>
+                <img id="slider-3" src="graphic_design/images/Earth is calling.png">
+                <p>This is a project designed for 2023 Halloween Parade located in NYC. The theme that year is "Outside down, Inside Out." I made this static image and corresponding motion graphic piece aims to display in the public environment for promotion.</p>
+            </div>
+    
+           <div class="slider-nav">
+                    <a href="#slider-1"></a>
+                    <a href="#slider-2"></a>
+                    <a href="#slider-3"></a>
+           </div>
+        </div>
+        </section>
+
+        <h1>Has experienced in ...</h1>
+        <h2>Modeling(Maya)</h2>
+        <div class="two_image">
+            <a href="game_design/gamedesign.html">
+                <img src="image/final_render1.jpg" class="center"></img>
+            </a>
+            <a href="game_design/gamedesign.html">
+            <img src="image/final_render3.jpg"  class="center">
+            </a>
+            <a href="game_design/gamedesign.html"> 
+            <img src="game_design/character in image.jpg" class="center">
+            </a>
+            <a href="game_design/gamedesign.html"> 
+                <img src="image/environment2.jpg" class="center">
+                </a>
+        </div>
+    </main>
+    <footer>
+        Email:zhany418@newschool.edu
+    </footer>
+    <script src="scripts/dropdown-menu.js"></script>
+        
+    <script>let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }</script>
+</body>
+</html>
