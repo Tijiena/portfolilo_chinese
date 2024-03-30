@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Kanit:wght@400;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Gruppo&family=Kanit:wght@400;800&display=swap');
+
 @font-face{
-    src:url(fonts/Theatrical.ttf);
-    font-family: broadway;
+    src:url(fonts/XiangJiaoDuiYinKuangCaoLingGanTi-2.ttf);
+    font-family: xiaojiao;
+};
+@font-face{
+    src:url(fonts/AaGuXianTi-2.ttf);
+    font-family: guxian;
 };
 
 :root{
@@ -49,7 +51,7 @@ body{
 nav{
     background-image: url("image/ｎａｖ.png");
     background-size:cover;
-    font-family: 'broadway';
+    font-family: 'xiaojiao';
     height:200px;
     font-weight:800;
     font-size:20px;
@@ -95,7 +97,7 @@ nav{
        line-height:20px;
     }
     ul li ul.dropdown li a{
-        font-family: 'Kanit',sans-serif;
+        font-family:'guxian';
         background-color:black;
         border-radius: 5px;
         float:right;
