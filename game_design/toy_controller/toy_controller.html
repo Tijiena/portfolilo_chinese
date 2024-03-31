@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is the game design page of the portfoilo">
-    <title>游戏设计 </title>
+    <title>玩偶外接控制器 </title>
     <link rel="stylesheet" href="../../global.css">
 </head>
 <body>
@@ -19,25 +19,23 @@
             <li ><a>游戏设计</a>
             <ul class="dropdown">
                 <li><a href="../one_week_project/oneweekproject.html">周项目</a></li>
-                <li><a>Toy Controller</a></li>
-                <li><a href="../fragment_island/fragment_island.html">Fragmented Islands</a></li>
-                <li><a href="../sky_skater/sky_skater.html">Sky Skater</a></li>
+                <li><a>玩偶外接<br>控制器</a></li>
+                <li><a href="../fragment_island/fragment_island.html">漂浮岛屿</a></li>
+                <li><a href="../sky_skater/sky_skater.html">摩天大楼</a></li>
             </ul>
             </li>
         </ul>
     </nav>
     <main>
-        <h1>Toy Controller</h1>
+        <h1>玩偶外接控制器</h1>
         <div class="two_image">
             <img src="images/c1e4023361eca669a6594c7f6f8ad5e.jpg" alt="A screenshot of where the game begins"  class="center">
-        <p>This is a project that aims to use flushies as outside controller for Unity Game. The controller used conductive thread to detect electric signal from human touch and sends this data to audrino, the progame used to code for these kinds of physical computing. Then, c# code inside unity is then used to process the data in arduino and trigger the reaction in the unity interface. </p>
+        <p>这个项目的目标是使用玩偶作为unity的外接控制器来进行游玩。玩偶被缝上了导电的线来感知是否有来自人体触碰的生物电，然后通过audrino发送数据到unity。然后在unity中，再通过代码来加工和理解这些数据，从而在unity的游戏中反馈出对应的玩偶。 </p>
         </div>
        
-        <h2>Playtest Video</h2>
-        <iframe width="1080" height="640"
-        src="https://www.youtube.com/embed/AoG2bweozFM"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-        </iframe>
-        <h2>Details within the Game</h2>
+        <h2>试玩视频</h2>
+        <iframe src="https://player.bilibili.com/player.html?aid=1052311397&bvid=BV1cH4y1H7Xn&cid=1488939608&p=1" scrolling="no" frameborder="no" framespacing="0" allowfullscreen="true" width="1080" height="640"> </iframe>
+        <h2>游戏中的一些细节</h2>
         <div class="three_image">
             <div class="image"><img src="images/arduino_code.png" alt="A screenshot of where the game begins"  class="center"> </div>
             <div class="image"><img src="images/unity_code1.png" alt="A screenshot of where the game begins"  class="center"></div>
@@ -47,11 +45,11 @@
             <span> &times; </span>
             <img src="images/arduino_code.png">
         </div>
-        <h2>Responsibilities</h2>
-        <p>Team Size: 1 (solo project)<br>
-        -code for detecting electric signal in arduino<br>-use conductive thread ,adafruit flora, and plushies to make outside controllers<br>-code for recorgnizing arduino information in unity<br>-code for displaying image and check answer when the count down turns into zero<br>-take picture for the plushies and make them into silhouette</p>
-        <h2>Reflections</h2>
-        <p>My original idea is to recreate Who’s that Pokemon scene in the pokemon anime, which basically is using silhouette to guess what is actuarial pokemon. However, it is impossible to have so many toys like pokemon as physical controllers. So in order to make the project within my scope, I decided to make this game with three plushies. Three plushies are obviously not enough and way too easy to guess, so I band the plushies into forms that are hard to guess as silhouette. Just in case of the final product, I think the silhouette can be a lot harder. By observing others playing my game, most people guessed every one of it correctly. 
+        <h2>负责内容</h2>
+        <p>参与人数：1人（单人项目）<br>
+        -感知生物电的arduino代码<br>-用adafruit flora（主板），导电线, 和玩偶来制作外接控制器<br>-unity中用来加工arduino信息的代码<br>-用来展示图片，在倒计时结束时确认答案的代码<br>-给玩偶拍照，并把他们变成剪影制作成美术素材</p>
+        <h2>总结</h2>
+        <p>我的灵感来源于宝可梦动画里的猜猜我是谁，一款通过宝可梦剪影来猜测这是什么宝可梦的互动小游戏。当然因为每个玩偶就是一个对应的外接控制器，所以无法拥有像宝可梦那样丰富的种类，综合了各个因素，我最终选择使用3个具有不同形状特点的玩偶作为我的外接控制器。为了让游戏更具有游戏性，我把玩偶掰成了不同的样子，尽力让它的剪影看起来不想它本来的样子。从最终的试玩效果上来说，我认为整个游戏还可以变得更难，现阶段大家的正确率很高，基本没有猜不出来的情况。 
         </p>
     </main>
     
