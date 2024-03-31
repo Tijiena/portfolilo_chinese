@@ -1,12 +1,17 @@
 
 @font-face{
+    src:url(fonts/ZaoZiGongFangHuangJinShiDai-FeiShangYong-XiTi-1.otf);
+    font-family: guxian;
+}
+@font-face{
     src:url(fonts/XiangJiaoDuiYinKuangCaoLingGanTi-2.ttf);
     font-family: xiaojiao;
-};
+}
 @font-face{
     src:url(fonts/AaGuXianTi-2.ttf);
-    font-family: guxian;
+    font-family: xi;
 };
+
 
 :root{
     --yellow:rgb(255, 225, 0);
@@ -16,7 +21,7 @@
 
 .changecolor{
     background-color:var(--pink);
-
+    
     animation-name:chgColors;
     animation-duration:5s;
     animation-timing-function:ease-in;
@@ -39,8 +44,8 @@
 html{
     background-color:rgb(50, 171, 227);
     color:black;
-    font-family: 'Kanit',sans-serif;
-    font-size:10px;  
+    font-family: 'guxian';
+    font-size:20px;  
 }
 body{
     width: 90%;
@@ -76,11 +81,9 @@ nav{
     ul li a{
     text-decoration:none;
     color:white;
-    font-size: 30px;
+    font-size: 35px;
     }
-    ul li a:hover{
-    color:rgb(245,217,80);
-    }
+  
     ul li ul.dropdown{
     display: none;
     position:absolute;
@@ -94,14 +97,14 @@ nav{
        margin-bottom: 10px;
        margin:0;
        padding:0;
-       line-height:20px;
+       line-height:30px;
     }
     ul li ul.dropdown li a{
         font-family:'guxian';
         background-color:black;
         border-radius: 5px;
         float:right;
-        font-size:21px;
+        font-size:20px;
         margin:0;
         margin-top:3px;
         margin-bottom:3px;
@@ -128,6 +131,7 @@ main{
     padding-top:2em;
     }
     main h1{
+    font-family: "xi";
     padding-top: 6px;
     margin-left: 2em;
     text-transform: uppercase;
@@ -174,7 +178,7 @@ main{
 
     }
     main iframe{
-        margin-left: 15em;
+        margin-left: 8em;
         margin-right: auto;
     }
     /*class and id in all page*/
@@ -307,10 +311,10 @@ main{
         height:175px;
     }
     #game{
-        font-size:30px;
+        font-size:37px;
     }
     #graphic{
-        font-size: 25px;
+        font-size: 31px;
         padding-top: 35px;
     }
     #other{
@@ -336,9 +340,6 @@ main{
     grid-row-gap:60px;
     grid-column-gap: 20px;
     margin:3em;
-    }
-    .typeface{
-    font-family: 'Delicious Handrawn', cursive;
     }
     #image_block{
     grid-column: 3 / span 2;
