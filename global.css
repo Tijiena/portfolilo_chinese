@@ -283,13 +283,13 @@ main{
     .slider-nav{
         display:flex;
         column-gap:1rem;
-        margin-left: 37em;
+        margin-left: 30em;
         margin-top: 3em;
         z-index:1 ;
     }
     .slider-nav a{
-        width:2rem;
-        height:2rem;
+        width:1rem;
+        height:1rem;
         border-radius: 50%;
         background-color:black;
         opacity: 0.75;
