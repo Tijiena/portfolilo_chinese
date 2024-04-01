@@ -243,7 +243,6 @@ main{
     font-weight: bolder;
     color:#fff;
     z-index:102;
-    display: none;
    }
    .popup-img img{
     position: absolute;
@@ -253,7 +252,6 @@ main{
     border-radius: 5px;
     width: 750px;
     object-fit: cover;
-    display: none;
    }
     /*class and id in index page*/
     .container{
