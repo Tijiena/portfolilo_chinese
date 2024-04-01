@@ -234,7 +234,7 @@ main{
     height: 100%;
     z-index: 100;
     transform: scale(1.2);
-    display: nne;
+    display: none;
    }
     .popup-img span{
     position: absolute;
