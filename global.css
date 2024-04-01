@@ -283,7 +283,7 @@ main{
     .slider-nav{
         display:flex;
         column-gap:1rem;
-        margin-left: 30em;
+        margin-left: 28em;
         margin-top: 3em;
         z-index:1 ;
     }
